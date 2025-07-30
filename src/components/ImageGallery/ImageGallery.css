@@ -1,0 +1,72 @@
+.ImageGallery {
+  display: flex;
+  position: relative;
+}
+.ImageGallery img {
+  width: 100%;
+  border-radius: 16px;
+  object-fit: fill;
+}
+
+.overlay{
+  display: none;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 100%;
+  border-radius: 16px;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.saveButton {
+  display: none;
+  width: max-content;
+  color: white;
+  border-radius: 15px;
+  padding: 10px 16px;
+  cursor: pointer;
+  background: #e50829;
+  position: absolute;
+  border: none;
+  top: 16px;
+  right: 5px;
+}
+.saveButton:hover {
+  background: #c40724;
+}
+
+.overlayIcons button {
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+  background: rgba(185, 185, 185, 0.5);
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  border: none;
+  justify-content: center;
+}
+.overlayIcons button:hover {
+  background: rgba(185, 185, 185, 1);
+}
+
+.overlayIcons {
+    display: flex;
+    display: none;
+  align-items: center;
+  gap: 5px;
+  position: absolute;
+  right: 5px;
+  bottom: 16px;
+}
+.overlayIcons button img {
+  width: 20px;
+  height: 20px;
+}
+.ImageGallery:hover .overlay,
+.ImageGallery:hover .overlayIcons,
+.ImageGallery:hover .saveButton {
+  display: block;
+  display: flex;
+}

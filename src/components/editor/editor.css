@@ -1,0 +1,123 @@
+.editor {
+  display: flex;
+  gap: 16px;
+  padding: 20px;
+}
+
+.layers {
+  flex: 1;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 32px;
+}
+.layers h3 {
+  font-size: 20px;
+  font-weight: 500;
+}
+.layers p {
+  font-size: 14px;
+  color: grey;
+  margin-top: 4px;
+}
+.layer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 16px;
+  padding: 6px 10px;
+  margin-top: 10px;
+  font-weight: 300;
+  font-size: 14px;
+}
+.layer:hover,
+.layer.selected {
+  background: grey;
+}
+.layerImg {
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.workspace {
+  flex: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e9e9e9;
+  padding: 64px 0px;
+}
+.canvas {
+  width: 375px;
+  border-radius: 16px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.text {
+  position: absolute;
+  z-index: 999;
+  max-width: 100%;
+}
+.text input {
+  border: none;
+  outline: none;
+  background: transparent;
+  cursor: grab;
+  width: 100%;
+  font-size: inherit;
+}
+.deleteTextButton {
+  position: absolute;
+  top: -36px;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  right: 10px;
+  background: white;
+  justify-content: center;
+  padding: 9px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.canvas .img {
+  width: 100%;
+}
+.options {
+  flex: 1;
+  margin-top: 20px;
+}
+.editingOption {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 10px;
+}
+.editingOptionspan{
+  font-weight: 500;
+}
+.editingOption input{
+  border: 2px solid #e0e0e0;
+  padding: 16px;
+  border-radius: 8px;
+}
+.textColor{
+  position: relative;
+}
+.colorPreview{
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.colorPicker {
+  position: absolute;
+  top: 120%;
+  left: 0;
+  z-index: 9999;
+}
+

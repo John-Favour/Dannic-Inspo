@@ -1,0 +1,146 @@
+.postInteractions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.custom-toast {
+  background-color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.custom-toast span{
+  color: black;
+  font-size: 20px;
+}
+.custom-toast span .link{
+  text-decoration: none;
+  color: orangered;
+  font-size: 20px;
+  font-weight: 500;
+}
+.interactionIcons {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-weight: 500;
+}
+
+.interactionIcons img, .interactionIcons svg{
+  cursor: pointer;
+}
+
+.postInteractions button {
+  background-color: #e50829;
+  color: white;
+  border: none;
+  border-radius: 24px;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.interactionIcons img {
+  width: 35px;
+  height: 35px;
+}
+.download {
+  position: relative;
+  cursor: pointer;
+}
+.downloadText{
+  position: absolute;
+  top: 25px;
+  right: -100px;
+  background-color: #fff;
+  padding: 5px 20px;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: large;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.downloadText:hover {
+  background-color: whitesmoke;
+}
+
+.share-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #fff;
+  border-radius: 20px;
+  padding: 20px 30px;
+  width: 90%;
+  max-width: 450px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.3s ease;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.close-btn {
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.share-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.share-options button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #333;
+  font-size: 12px;
+}
+
+.share-options span {
+  margin-top: 5px;
+}
+
+.share-search {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  font-size: 14px;
+  color: #aaa;
+}
+
+@keyframes fadeIn {
+  from {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

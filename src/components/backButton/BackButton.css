@@ -1,0 +1,20 @@
+.back-text {
+  opacity: 0;
+  transform: translateX(-5px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  white-space: nowrap;
+}
+
+.back-btn:hover .back-text {
+  opacity: 1;
+  transform: translateX(0);
+  padding: 10px 20px;
+  background: rgba(0,0,0,0.1);
+  border-radius: 10px;
+  z-index: 999;
+}
+.back-btn{
+    position: fixed;
+    top: 50px;
+    left: 40px;
+}

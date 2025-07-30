@@ -1,0 +1,74 @@
+.comments {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-height: 0;
+}
+.commentList {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow-y: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.commentList::-webkit-scrollbar{
+    display: none;
+}
+
+.commentForm {
+  background: white;
+  box-shadow: 2px 2px gainsboro ;
+  padding: 5px 10px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.comment{
+    display: flex;gap: 16px;
+   
+}
+.comment img{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.commentContents{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.commentUsername{
+    font-weight: 500;
+    font-size: 14px;
+}
+.commentText{
+    font-size: 14px;
+    margin: 0;
+}
+.commentTime{
+    font-size: 14px;
+    margin: 0;
+}
+
+.commentForm input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 16px;
+}
+.emoji {
+    position: relative;
+  font-size: 20px;
+  cursor: pointer;
+}
+.emojiPicker{
+    position: absolute;
+    right: 0;
+    bottom: 50px;
+}

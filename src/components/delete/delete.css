@@ -1,0 +1,51 @@
+.delete-confirmation{
+    position: fixed;
+    top: calc(50% - 175px);
+    left: calc(50% - 200px);
+    width: 400px;
+    height: 350px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    z-index: 999;
+    flex-direction: column;
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    align-items: center;
+}
+.btnDelete{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.delete-confirmation .btnDelete button{
+    padding: 15px 20px;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 5px;
+ background: rgba(0, 0, 0, 0.1);
+ width: fit-content;
+    cursor: pointer;
+}
+.delete-confirmation button:last-child{
+    background: #e50829;
+    color: white;
+}
+.delete-confirmation button:last-child:hover{
+    background: #c40724;
+}
+.pin-details{
+    display: flex;
+    flex-direction: column;
+    text-transform: capitalize;
+    align-items: center;
+    font-size: 18px;
+}
+.delete-confirmation p{
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+}
